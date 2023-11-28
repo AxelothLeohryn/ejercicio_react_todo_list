@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,82 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* -------------------------------Añadido por mi----------------------- */
+#root {
+  
+}
+h1 {
+  filter: drop-shadow(0 0 1em #ff0000aa);
+}
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  margin: 0px 5px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  filter: drop-shadow(0 0 4em #00ff1aaa);
+}
+
+.addbutton {
+  background-color: red;
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  right: -10px;
+  filter: drop-shadow(0 0 1em #00bfffaa);
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.deletebutton {
+  filter: drop-shadow(0 0 1em #ff0000);
+}
+.popup {
+  animation: 0.4s ease-out 0s 1 slideInFromRight;
+  padding: 20px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+input[type='checkbox'] {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 20px solid #555;
+}
+
+input[type='checkbox']:checked {
+  background: #abd;
 }
